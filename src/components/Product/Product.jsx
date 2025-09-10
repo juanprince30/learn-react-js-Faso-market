@@ -1,26 +1,26 @@
 import Like from "../Like";
 
-export default function Product(){
+export default function Product(props){
     return(
-        <div className="card bg-base-100 shadow-md w-full sm:w-70">
+        <div className="card bg-base-100 shadow-md w-full sm:w-70 sm:h-100">
             
             <figure className="h-48 w-full overflow-hidden">
                 <img
-                src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+                src={props.image}
                 alt="Product"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
                 />
             </figure>
 
             
             <div className="card-body">
-                <h2 className="card-title">Card Title</h2>
+                <h2 className="card-title">{props.title}</h2>
 
                 <div className="flex items-center justify-between w-full">
                 
                 <div className="flex flex-col items-start gap-2">
                     <Like/>
-                    <p className="text-primary font-bold">$99.99</p>
+                    <p className="text-primary font-bold">{Math.floor(props.price *655)} FCFA</p>
                 </div>
 
                 
