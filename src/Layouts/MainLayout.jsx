@@ -4,15 +4,21 @@ import MainContent from "../components/MainContent";
 
 export default function MainLayout(){
     return(
-        <div className="flex flex-col">
-            <header className="navbar bg-base-300">
+        <div className="flex flex-col min-h-screen">
+            <header className="w-full bg-base-300 shadow-md">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <Header />
+                </div>
             </header>
-            <main className="bg-red-700">
+            <main className="flex-1 w-full bg-red-700">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 <MainContent />
+                </div>
             </main>
-            <footer className="footer sm:footer-horizontal footer-center bg-base-300 text-base-content p-4">
+            <footer className="w-full bg-base-300 text-base-content p-4">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">
                 <Footer />
+                </div>
             </footer>
         </div>
     );
