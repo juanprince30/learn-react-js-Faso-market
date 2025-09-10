@@ -1,3 +1,4 @@
+import Carrousel from "../components/Carrousel";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import MainContent from "../components/MainContent";
@@ -10,7 +11,8 @@ export default function MainLayout(){
                 <Header />
                 </div>
             </header>
-            <main className="flex-1 w-full bg-red-700">
+            <main className="flex-1 w-full bg-red-200">
+                <Carrousel />
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
                 <MainContent />
                 </div>
