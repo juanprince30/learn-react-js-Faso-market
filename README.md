@@ -1,13 +1,60 @@
-## FAso Market
+## Faso Market
 
-An E-commerce app to illustrate all react concepts
+An E-commerce app to illustrate all react concepts learnt
 
+## Overview
 
+![Aperçu de l’application](header.png)
+![Aperçu de l’application](maincontent.png)
+![Aperçu de l’application](productdetail.png)
 
 
 ## Features
 
-features 1
+features 1: 
+features 2:
+features 3:
+
+## Tree
+
+```
+learn-react-js-Faso-market
+├─ eslint.config.js
+├─ header.png
+├─ index.html
+├─ maincontent.png
+├─ package-lock.json
+├─ package.json
+├─ productdetail.png
+├─ public
+├─ README.md
+├─ src
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ assets
+│  │  ├─ bg1.jpg
+│  │  ├─ bg2.jpg
+│  │  ├─ bg3.jpg
+│  │  └─ bg4.jpg
+│  ├─ components
+│  │  ├─ Carrousel.jsx
+│  │  ├─ Footer.jsx
+│  │  ├─ Header.jsx
+│  │  ├─ Like.jsx
+│  │  ├─ MainContent.jsx
+│  │  ├─ MainOutlet.jsx
+│  │  └─ Product
+│  │     ├─ Product.jsx
+│  │     ├─ ProductDetail.jsx
+│  │     └─ ProductList.jsx
+│  ├─ index.css
+│  ├─ Layouts
+│  │  └─ MainLayout.jsx
+│  ├─ main.jsx
+│  └─ route.jsx
+└─ vite.config.js
+
+```
 
 
 ## Dev
@@ -29,8 +76,3 @@ npm install
 ```bash
 npm run dev
 ```
-
-
-
-
-
