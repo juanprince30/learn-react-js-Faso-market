@@ -1,20 +1,23 @@
+import { Link } from "react-router-dom";
 import Like from "../Like";
 
 export default function Product(props){
     return(
-        <div className="card bg-base-100 shadow-md w-full sm:w-70 sm:h-100">
+        <div className="card bg-base-100 shadow-md w-full sm:w-70 sm:h-125">
             
-            <figure className="h-48 w-full overflow-hidden">
-                <img
-                src={props.image}
-                alt="Product"
-                className="h-full w-full object-contain"
-                />
-            </figure>
+            <Link to={`product/${props.id}`}>
+                <figure className="h-48 w-full overflow-hidden">
+                    <img
+                    src={props.image}
+                    alt="Product"
+                    className="h-full w-full object-contain"
+                    />
+                </figure>
+            </Link>
 
             
             <div className="card-body">
-                <h2 className="card-title">{props.title}</h2>
+                <Link to={`product/${props.id}`}><h2 className="card-title">{props.title}</h2></Link>
 
                 <div className="flex items-center justify-between w-full">
                 

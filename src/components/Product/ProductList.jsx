@@ -8,7 +8,6 @@ export default function ProductList(){
     const [data, setData]=useState(null)
 
     const fetchproduct=() =>{
-                console.log()
                 setLoading(true)
 
                 axios.get("https://fakestoreapi.com/products")

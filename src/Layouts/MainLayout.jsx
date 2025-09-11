@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Carrousel from "../components/Carrousel";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -12,10 +13,7 @@ export default function MainLayout(){
                 </div>
             </header>
             <main className="flex-1 w-full bg-red-200">
-                <Carrousel />
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-                <MainContent />
-                </div>
+                <Outlet/>
             </main>
             <footer className="w-full bg-base-300 text-base-content p-4">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between">

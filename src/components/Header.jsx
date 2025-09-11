@@ -2,7 +2,7 @@ export default function Header(){
     return(
         <>
              <div className="flex-1">
-                <a className="btn btn-ghost text-xl"><p className="text-red-700">Faso</p> <p className="text-green-700">Market</p></a>
+                <a className="btn btn-ghost text-xl"><p className="text-red-700">Faso</p><p className="text-green-700">Market</p></a>
             </div>
             <div className="flex-none w-full max-w-md">
                 <div className="form-control w-full">
